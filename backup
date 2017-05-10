@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+old_fname=$1
+now=$(date +"%Y-%m-%d-%S")
+new_fname="$old_fname.backup.$now"
+cp -rav $old_fname $new_fname 
+echo "Already backup file to $new_fname"

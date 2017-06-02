@@ -1,3 +1,14 @@
 #!/bin/bash
 
-echo "This is for test checkout"
+list=$@
+
+newlist=()
+
+for l in $list; do
+
+        newlist+=($l)
+
+done
+
+echo "new"
+echo $newlist

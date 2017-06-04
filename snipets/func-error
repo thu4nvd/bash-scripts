@@ -1,0 +1,6 @@
+arg0=$(basename $0 .sh)
+error()
+{
+    echo "$arg0: $*" 1>&2
+    exit 1
+}

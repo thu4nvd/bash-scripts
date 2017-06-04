@@ -1,0 +1,17 @@
+vflag=0
+out=
+file=
+Dflag=
+while getopts hvVf:o:D: flag
+do
+    case "$flag" in
+    (h) help; exit 0;;
+    (V) echo "$arg0: version $Revision$ ($Date$)"; exit 0;;
+    (v) vflag=1;;
+    (f) file="$OPTARG";;
+    (o) out="$OPTARG";;
+    (D) Dflag="$Dflag $OPTARG";;
+    (*) usage;;
+    esac
+done
+shift $(expr $OPTIND - 1)

@@ -1,7 +1,7 @@
 #!/bin/bash
 #************************************************#
 # File:    po-trans.sh
-# Author:  thuanvd@outlook.com
+# Author:  thuanvd@outlook.com inspired by txgvnn@gmail.com
 # Date:    Juin 03, 2017
 #
 # Translate every line using trans tool
@@ -90,3 +90,5 @@ while IFS='' read -r line; do
     echo "$line" >> "$file_out"
   fi
 done < $file_in
+
+# Expect result

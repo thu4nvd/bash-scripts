@@ -1,14 +1,20 @@
 #!/bin/bash
+# Hunting variables with a trap.
 
-list=$@
+trap 'echo Variable Listing --- a = $a  b = $b' EXIT
+#  EXIT is the name of the signal generated upon exit from a script.
+#
+#  The command specified by the "trap" doesn't execute until
+#+ the appropriate signal is sent.
 
-newlist=()
+echo "This prints before the \"trap\" --"
+echo "even though the script sees the \"trap\" first."
+echo
 
-for l in $list; do
+a=39
 
-        newlist+=($l)
+b=36
 
-done
-
-echo "new"
-echo $newlist
+exit 0
+#  Note that commenting out the 'exit' command makes no difference,
+#+ since the script exits in any case after running out of commands.

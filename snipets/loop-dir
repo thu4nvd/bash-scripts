@@ -1,0 +1,7 @@
+#!/bin/bash
+PATH=/path/to/dir/
+FILES=*.sql
+for f in $PATH$FILES
+do
+	# Code block for processing each file $f
+done

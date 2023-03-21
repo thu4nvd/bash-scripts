@@ -1,0 +1,22 @@
+
+#!/bin/bash -
+#title          :template.sh
+#description    :Initial template for bash script
+#author         :thuanvd
+#date           :2017-06-04
+#version        :1.0
+#usage          :./template.sh
+#notes          :
+#bash_version   :4.4.11(1)-release
+#============================================================================
+# Copyright (C) 2017  Thuan VU-DUC - All Rights Reserved
+# Permission to copy and modify is granted under the MIT license
+
+
+## Define CONSTANT here
+## Define functions here
+## Main function from here
+
+echo "This is just template"
+
+## Expected results ( if have )
